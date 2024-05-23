@@ -22,7 +22,13 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+        // Add one luck card hard coded to 2 of Clubs
+        Card luckCard = new Card();
+        luckCard.setValue(2);
+        luckCard.setSuit("Clubs");
         
+        // Display the luck card
+        System.out.println("Lucky Card: " + luckCard.getValue() + " of " + luckCard.getSuit());
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
